@@ -1,0 +1,800 @@
+/* ==============================
+   Общие стили
+============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #10171e;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00a3c8;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0 0 10px;
+}
+
+.wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.c {
+    color: #00a3c8;
+}
+
+.btn {
+    display: inline-block;
+    background: #00a3c8;
+    color: white;
+    border: none;
+    padding: 11px 22px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0b8fb0;
+    color: white;
+}
+
+.line {
+    height: 1px;
+    max-width: 700px;
+    margin: 80px auto;
+    background: #00a3c8;
+}
+
+
+/* ==============================
+   Меню
+============================== */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.logo i {
+    width: 30px;
+    height: 30px;
+    background: #00a3c8;
+    color: #10171e;
+    font-size: 13px;
+    font-style: normal;
+    text-align: center;
+    line-height: 30px;
+}
+
+.nav-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-btn {
+    background: none;
+    border: 1px solid #00a3c8;
+    color: inherit;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.icon-btn:hover {
+    background: #00a3c8;
+    color: white;
+}
+
+.burger {
+    display: none;
+}
+
+
+/* ==============================
+   Главный блок
+============================== */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding-top: 50px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.role {
+    font-size: 24px;
+    color: #00a3c8;
+    margin: 0 0 20px;
+}
+
+.d {
+    color: #c9d1d9;
+    margin-bottom: 25px;
+}
+
+.act {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.soc {
+    display: flex;
+    gap: 15px;
+}
+
+.soc svg {
+    width: 28px;
+    height: 28px;
+    fill: white;
+}
+
+.soc a:hover svg {
+    fill: #00a3c8;
+}
+
+.dl {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+
+/* ==============================
+   Картинка справа
+============================== */
+
+.art {
+    position: relative;
+    width: 400px;
+    height: 420px;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.big {
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background: #1a242d;
+}
+
+.sm {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #18222b;
+}
+
+.ph {
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    width: 210px;
+    height: 280px;
+    background: #0d6b82;
+    text-align: center;
+    padding-top: 110px;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+.ph img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.tile {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+}
+
+.tile svg {
+    width: 100%;
+    height: 100%;
+}
+
+.t1 {
+    left: 50px;
+    top: 20px;
+}
+
+.t2 {
+    left: 220px;
+    top: 5px;
+}
+
+.t3 {
+    right: 20px;
+    top: 60px;
+}
+
+.t4 {
+    right: 40px;
+    top: 240px;
+}
+
+.t5 {
+    left: 30px;
+    top: 180px;
+}
+
+.t6 {
+    left: 90px;
+    top: 330px;
+}
+
+
+/* ==============================
+   Обо мне
+============================== */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.aphoto {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.circ {
+    position: absolute;
+    left: -20px;
+    top: -30px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: #1a242d;
+}
+
+.sq {
+    position: absolute;
+    left: 15px;
+    top: 40px;
+    width: 270px;
+    height: 260px;
+    background: #176d83;
+    transform: rotate(5deg);
+}
+
+.inner {
+    position: absolute;
+    left: 15px;
+    top: 40px;
+    width: 270px;
+    height: 260px;
+    background: #2a3138;
+    text-align: center;
+    padding-top: 120px;
+    overflow: hidden;
+    transform: rotate(-4deg);
+}
+
+.inner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    filter: grayscale(1);
+}
+
+.about p {
+    color: #c9d1d9;
+}
+
+.facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+}
+
+.facts b {
+    color: #00a3c8;
+    font-weight: 500;
+}
+
+
+/* ==============================
+   Образование и языки
+============================== */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.edu {
+    background: #1f3a52;
+    padding: 10px;
+}
+
+.in {
+    background: white;
+    color: #1b2a38;
+    padding: 25px;
+    min-height: 220px;
+}
+
+.in h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.tg {
+    color: #0b8fb0;
+    font-weight: 500;
+}
+
+.cap {
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+
+/* ==============================
+   Проекты
+============================== */
+
+.sh {
+    text-align: center;
+    max-width: 520px;
+    margin: 0 auto 30px;
+}
+
+.sh p {
+    color: #c9d1d9;
+    margin: 0;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.tags span {
+    background: #00a3c8;
+    padding: 1px 10px;
+    font-size: 12px;
+}
+
+.pg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.hid {
+    display: none;
+}
+
+.pimg {
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.g1 {
+    background: #0b6a8a;
+}
+
+.g2 {
+    background: #4b2fb0;
+}
+
+.g3 {
+    background: #b9772a;
+}
+
+.g4 {
+    background: #b8486f;
+}
+
+.g5 {
+    background: #1f9a72;
+}
+
+.k {
+    display: flex;
+    justify-content: space-between;
+    color: #00a3c8;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.pc h3 {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.pc p {
+    font-size: 13px;
+    color: #c9d1d9;
+    margin: 4px 0;
+}
+
+.l {
+    font-size: 13px;
+}
+
+.more {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* ==============================
+   Навыки
+============================== */
+
+.sk {
+    background: #1b232b;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.sk div {
+    width: 90px;
+    padding: 20px 0 8px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    background: #10202a;
+}
+
+.sk svg {
+    width: 44px;
+    height: 44px;
+    display: block;
+    margin: 0 auto 8px;
+}
+
+.sk small {
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+    color: #c9d1d9;
+    margin-top: 5px;
+}
+
+.chips {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.chips span {
+    border: 1px solid #2c3640;
+    padding: 3px 14px;
+    font-size: 13px;
+}
+
+
+/* ==============================
+   Хобби
+============================== */
+
+.hobby {
+    background: #18212a;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+}
+
+.king {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: #00a3c8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.king:hover {
+    background: #4fd8f5;
+}
+
+.king svg {
+    width: 60px;
+    height: 60px;
+    fill: #10171e;
+}
+
+.hobby h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.hobby p {
+    color: #c9d1d9;
+    margin: 8px 0 14px;
+}
+
+
+/* ==============================
+   Форма
+============================== */
+
+form {
+    background: #18212a;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    color: #c9d1d9;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #00a3c8;
+    color: white;
+    padding: 8px 0;
+    font-size: 15px;
+}
+
+textarea {
+    border: 1px solid #00a3c8;
+    padding: 12px;
+    height: 150px;
+}
+
+.full {
+    grid-column: 1 / 3;
+}
+
+#msg {
+    font-size: 14px;
+    color: #c9d1d9;
+    margin: 0;
+}
+
+
+/* ==============================
+   Подвал сайта
+============================== */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 80px;
+    border-top: 1px solid #1d2731;
+    font-size: 13px;
+    color: #c9d1d9;
+}
+
+
+/* ==============================
+   Светлая тема
+============================== */
+
+.light {
+    background: #f4f7f9;
+    color: #10171e;
+}
+
+.light .big,
+.light .circ {
+    background: #dfe9ee;
+}
+
+.light .sm {
+    background: #e6eef2;
+}
+
+.light .inner {
+    background: #cfd8de;
+}
+
+.light .d,
+.light .about p,
+.light .sh p,
+.light .pc p,
+.light .hobby p,
+.light label,
+.light #msg,
+.light footer,
+.light .sk small,
+.light .chips span {
+    color: #4a5560;
+}
+
+.light .soc svg {
+    fill: #10171e;
+}
+
+.light .hobby,
+.light form,
+.light .sk {
+    background: #e6edf1;
+}
+
+.light .sk div {
+    background: white;
+}
+
+.light input,
+.light textarea {
+    color: #10171e;
+}
+
+.light .chips span {
+    border-color: #c5ced5;
+}
+
+.light footer {
+    border-top-color: #d5dde3;
+}
+
+
+/* ==============================
+   Адаптация под телефон
+============================== */
+
+@media (max-width: 800px) {
+
+    .hero,
+    .about,
+    .cards,
+    .pg,
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    .full {
+        grid-column: auto;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+        width: 100%;
+        order: 3;
+        flex-direction: column;
+        gap: 12px;
+        padding-top: 12px;
+    }
+
+    #menu.open {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .art {
+        width: 320px;
+        height: 380px;
+    }
+
+    .big {
+        width: 300px;
+        height: 300px;
+        left: 10px;
+    }
+
+    .ph {
+        left: 60px;
+    }
+
+    .t2 {
+        left: 180px;
+    }
+
+    .aphoto {
+        margin: auto;
+    }
+
+    .hobby {
+        flex-direction: column;
+        text-align: center;
+    }
+}
